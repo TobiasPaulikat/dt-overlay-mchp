@@ -29,7 +29,7 @@
 			};
 			base_fdt {
 				description = "Flattened Device Tree blob";
-				data = /incbin/("./dts/microchip/mpfs-video-kit.dtb");
+				data = /incbin/("./dts/microchip/mpfs-disco-kit.dtb");
 				type = "flat_dt";
 				arch = "riscv";
 				compression = "none";
