@@ -31,12 +31,12 @@
 		status = "okay";
 	};
 
-	mpfs_dma_proxy: mpfs-dma-proxy {
+	/* mpfs_dma_proxy: mpfs-dma-proxy {
 		compatible = "microchip,mpfs-dma-proxy";
 		dmas = <&pdma 2>, <&pdma 3>;
 		dma-names = "dma-proxy0", "dma-proxy1";
 	};
-
+*/
 	reserved-memory {
 		cambuf0: buffer@C6000000 {
 			reg = <0x0 0xC6000000 0x0 0x2000000>;
