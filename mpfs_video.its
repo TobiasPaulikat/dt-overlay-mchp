@@ -29,7 +29,7 @@
 			};
 			base_fdt {
 				description = "Flattened Device Tree blob";
-				data = /incbin/("./dts/microchip/mpfs-video-kit.dtb");
+				data = /incbin/("./dts/microchip/mpfs-disco-kit.dtb");
 				type = "flat_dt";
 				arch = "riscv";
 				compression = "none";
@@ -49,7 +49,7 @@
 					algo = "sha256";
 				};
 			};
-			fdt_mpfs_video_bayer {
+			/* fdt_mpfs_video_bayer {
 				description = "Device Tree mpfs video bayer dtbo";
 				data = /incbin/("./mpfs_video/mpfs_video_bayer.dtbo");
 				type = "flat_dt";
@@ -60,6 +60,7 @@
 					algo = "sha256";
 				};
 			};
+*/
 		};
 
 		configurations {
@@ -80,10 +81,10 @@
 				fdt = "fdt_h_264";
 			};
 
-			mpfs_video_bayer {
+			/* mpfs_video_bayer {
 				description = "FDT overlay blob for video bayer";
 				fdt = "fdt_mpfs_video_bayer";
-			};
+			};*/
 		};
 };
 
