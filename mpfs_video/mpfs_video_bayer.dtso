@@ -132,7 +132,7 @@
 				imx219_ep_cam0: endpoint {
 					remote-endpoint = <&csi2_0_in>;
 					data-lanes = <1 2>;
-					link-frequencies = /bits/ 64 <891000000 445500000>;
+					link-frequencies = /bits/ 64 <456000000>;
 				};
 			};
 		};
