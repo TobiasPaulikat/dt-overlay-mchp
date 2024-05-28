@@ -50,7 +50,7 @@
 		clocks = <&imx219_gate_clock0>;
 		assigned-clocks = <&imx219_gate_clock0>;
 		assigned-clock-rates = <24000000>;
-		reg = <0x10>;
+		reg = <0x1a>;
 		port {
 			imx219_ep_cam0: endpoint {
 				remote-endpoint = <&mchp_dscmi_ep_cam0>;
