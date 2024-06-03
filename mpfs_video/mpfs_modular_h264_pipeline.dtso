@@ -168,7 +168,7 @@
 		interrupt-parent = <&plic>;
 		interrupts = <119>;
 		microchip,csi-pxl-format = <0x2b>;
-		microchip,csi-fixed-out-raw8;
+		microchip,csi-fixed-out-raw10;
 		clock-names = "axi", "video";
 		clocks = <&axi_clk_0>, <&video_clk_0>;
 		status = "okay";
