@@ -65,9 +65,9 @@
 	#address-cells = <2>;
 	#size-cells = <2>;
 
-	mchp_dscmi_cam0: video-pipeline@60000000 {
+	mchp_dscmi_cam0: video-pipeline@40000000 {
 		compatible = "microchip,fpga-dscmi-rtl-v2306";
-		reg = <0x0 0x60000000 0x0 0x2000>;
+		reg = <0x0 0x40000000 0x0 0x2000>;
 		interrupt-parent = <&plic>;
 		interrupts = <118>;
 		reset-gpios = <&gpio2 17 GPIO_ACTIVE_HIGH>;
