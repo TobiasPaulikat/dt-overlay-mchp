@@ -61,7 +61,6 @@
 		interrupt-parent = <&plic>;
 		interrupts = <118>;
 		reset-gpios = <&gpio2 17 GPIO_ACTIVE_HIGH>;
-		dma-noncoherent;
 		clock-names = "axi", "video";
 		clocks = <&axi_clk_0>, <&video_clk_0>;
 		status = "okay";
