@@ -115,7 +115,7 @@
 	#address-cells = <0x01>;
 	#size-cells = <0x00>;
 
-	imx219_cam0: camera@1a {
+	imx219_cam0: camera@10 {
 		compatible = "sony,imx219";
 		clocks = <&imx219_gate_clock0>;
 		assigned-clocks = <&imx219_gate_clock0>;
