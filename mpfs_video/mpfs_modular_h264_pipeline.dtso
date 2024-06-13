@@ -28,7 +28,7 @@
 		compatible = "gpio-gate-clock";
 		clocks = <&imx219_clk>;
 		#clock-cells = <0>;
-		enable-gpios = <&gpio2 27 GPIO_ACTIVE_HIGH>;
+		enable-gpios = <&gpio2 22 GPIO_ACTIVE_HIGH>;
 		status = "okay";
 	};
 
