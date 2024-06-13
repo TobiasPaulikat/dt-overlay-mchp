@@ -118,7 +118,7 @@
 				microchip,video-format = <MVCF_RGB>;
 				microchip,video-width = <8>;
 				rgbtoyuv422_0_in: endpoint {
-					remote-endpoint = <&rgb_scaler_0_out>;
+					remote-endpoint = <&image_enhancement_0_out>;
 				};
 			};
 			port@1 {
@@ -178,7 +178,7 @@ image_enhancement_0: image-enhancement@60004000 {
 				microchip,video-format = <MVCF_RGB>;
 				microchip,video-width = <8>;
 				monotorgb_0_out: endpoint {
-					remote-endpoint = <&rgb_scaler_0_in>;
+					remote-endpoint = <&image_enhancement_0_in>;
 				};
 			};
 		};
