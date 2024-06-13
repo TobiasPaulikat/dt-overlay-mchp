@@ -118,7 +118,7 @@
 				microchip,video-format = <MVCF_RGB>;
 				microchip,video-width = <8>;
 				rgbtoyuv422_0_in: endpoint {
-					remote-endpoint = <&monotorgb_0_out>;
+					remote-endpoint = <&rgb_scaler_0_out>;
 				};
 			};
 			port@1 {
@@ -132,6 +132,29 @@
 		};
 	};
 
+rgb_scaler_0: rgb-scaler@60005000 {
+		compatible = "microchip,rgb-scaler-rtl-v1";
+		reg = <0x00 0x60005000 0x00 0x1000>;
+		status = "okay";
+
+		ports {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			port@0 {
+				reg = <0>;
+				rgb_scaler_0_in: endpoint {
+					remote-endpoint = <&monotorgb_0_out>;
+				};
+			};
+			port@1 {
+				reg = <1>;
+				rgb_scaler_0_out: endpoint {
+					remote-endpoint = <&rgbtoyuv422_0_in>;
+				};
+			};
+		};
+	};
 	monotorgb_0: generic-video-pipeline-connector@60003000 {
 		compatible = "microchip,generic-video-pipeline-connector";
 		reg = <0x00 0x60003000 0x00 0x1000>;
@@ -155,7 +178,7 @@
 				microchip,video-format = <MVCF_RGB>;
 				microchip,video-width = <8>;
 				monotorgb_0_out: endpoint {
-					remote-endpoint = <&rgbtoyuv422_0_in>;
+					remote-endpoint = <&rgb_scaler_0_in>;
 				};
 			};
 		};
