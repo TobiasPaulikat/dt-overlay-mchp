@@ -60,7 +60,7 @@
 		reg = <0x0 0x60000000 0x0 0x1000>;
 		interrupt-parent = <&plic>;
 		interrupts = <118>;
-		reset-gpios = <&gpio2 18 GPIO_ACTIVE_HIGH>;
+		reset-gpios = <&gpio2 17 GPIO_ACTIVE_HIGH>;
 		clock-names = "axi", "video";
 		clocks = <&axi_clk_0>, <&video_clk_0>;
 		status = "okay";
